@@ -1,4 +1,5 @@
-#Lab 6
+# Lab 6
+# Mason Fields
 
 def encode(original):  # Code to shift values by three
     new = ''
@@ -9,7 +10,8 @@ def encode(original):  # Code to shift values by three
         new += str(i)  # puts everything back nice and tidy
     return new
 
-if __name__ == '__main__':
+
+def main():
     while True:
         opt = int(input('Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\nPlease enter an option: '))
     
@@ -21,3 +23,7 @@ if __name__ == '__main__':
             print('Your password has been encoded and stored!')
         elif opt == 2:  # prints encoded and original password
             print(f'The encoded password is {encoded}, and the original passworded is {original}.')
+
+
+if __name__ == '__main__':
+    main()
